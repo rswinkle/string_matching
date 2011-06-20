@@ -1,0 +1,28 @@
+
+string_matching
+
+(c) Robert Winkler 2011
+=======
+
+This is just a collection of for string matching algorithms in C.
+
+Rabin-Karp
+automata/DFA
+Knuth-Morris-Pratt
+Boyer-Moore
+
+
+I've tested them by hand fairly thouroughly but I intend to add some
+test cases and maybe alternate versions that give the line number and position
+in the line rather than the absolute offset (0 is beginning of file).
+
+Rabin-Karp, automata and KMP algorithms I based off the psuedo-code
+in Inroduction to Algorithms, Corment et al (3rd Edition).
+
+Boyer Moore I took what was on Wikipedia and modified it.  I used my own
+prefix function (though they're virtually identical of course being so simple)
+and I changed the good_suffix function completely to compute the strong suffix rule
+instead of the weak suffix rule that they were computing.  I also changed how it
+returns results of course so it can return more than one.
+
+I think that's about it.
