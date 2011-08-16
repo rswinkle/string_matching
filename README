@@ -1,4 +1,3 @@
-
 string_matching
 
 (c) Robert Winkler 2011
@@ -24,5 +23,11 @@ prefix function (though they're virtually identical of course being so simple)
 and I changed the good_suffix function completely to compute the strong suffix rule
 instead of the weak suffix rule that they were computing.  I also changed how it
 returns results of course so it can return more than one.
+
+I should probably add that I submitted my revised boyer-moore code to wikipedia in place
+of the C implementation that used to be there so the code there is exactly my code here.
+It's been there for over a month now so I guess that means it's an obscure enough
+page that it's rarely reviewed and/or people don't care enough to check, or it's
+correct.  I'm guessing the former is true and hoping the latter.
 
 I think that's about it.
