@@ -177,7 +177,7 @@ void prepare_goodsuffix_heuristic(const char *normal, size_t size, int result[])
 {
 	char *left = (char *) normal;
 	char *right = left + size;
-	char reversed[size+1];
+	char *reversed = new char[size+1];
 	char *tmp = reversed + size;
 	size_t i,j;
 	char test;
@@ -232,6 +232,7 @@ void prepare_goodsuffix_heuristic(const char *normal, size_t size, int result[])
 	//the same for a string in both directions
 	
 	delete[] prefix_reversed;
+	delete[] reversed;
 }
 /*
  * Boyer-Moore search algorithm
@@ -253,7 +254,7 @@ void boyermoore_search(char *haystack, char *needle)
 	
 	/** Initialize heuristics */
 	int badcharacter[ALPHABET_SIZE];
-	int goodsuffix[needle_len+1];
+	int *goodsuffix = new int[needle_len+1];
  
 	prepare_badcharacter_heuristic(needle, needle_len, badcharacter);
 	prepare_goodsuffix_heuristic(needle, needle_len, goodsuffix);
@@ -278,6 +279,9 @@ void boyermoore_search(char *haystack, char *needle)
 			s += goodsuffix[0];
 		}
 	}
+
+
+	delete[] goodsuffix;
 }
 
 
