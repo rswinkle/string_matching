@@ -1,3 +1,4 @@
+
 string_matching
 
 (c) Robert Winkler 2011
@@ -26,11 +27,5 @@ in Inroduction to Algorithms, Corment et al (3rd Edition).
 
 Boyer Moore I based off what used to be in the Wikipedia article(Summer '11).
 I improved it (and used C++ instead of straight C) and am using the strong suffix rule.
-
-I should probably add that I submitted my revised boyer-moore code to wikipedia in place
-of the C implementation that used to be there so the code there is exactly my code here.
-It's been there for over a month now so I guess that means it's an obscure enough
-page that it's rarely reviewed and/or people don't care enough to check, or it's
-correct.  I'm guessing the former is true and hoping the latter.
 
 I think that's about it.
