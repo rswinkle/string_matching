@@ -1,8 +1,8 @@
 
 string_matching
+===============
 
-(c) Robert Winkler 2011
-=======
+(c) Robert Winkler 2011-2019
 
 This is just a collection of for string matching algorithms in C.
 
@@ -27,5 +27,7 @@ in Inroduction to Algorithms, Corment et al (3rd Edition).
 
 Boyer Moore I based off what used to be in the Wikipedia article(Summer '11).
 I improved it (and used C++ instead of straight C) and am using the strong suffix rule.
+
+Update 2019: iirc Boyer Moore has a bug that I never got around to fixing
 
 I think that's about it.
